@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import { APP_SLOGAN, APP_TITLE, AUTHOR_FACEBOOK, AUTHOR_NAME } from '@/constants/config';
+import config from '@/config.json';
 import '@/styles/global.scss'
 
 const inter = Open_Sans({
@@ -10,15 +10,15 @@ const inter = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: APP_TITLE,
-  description: APP_SLOGAN,
+  title: config.title,
+  description: config.slogan,
   viewport: { width: "device-width", initialScale: 1 },
   themeColor:  [
     { media: "(prefers-color-scheme: dark)", color: "#000000" },
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
   ],
   authors: [{
-    name: AUTHOR_NAME, url: AUTHOR_FACEBOOK
+    name: config.author.name, url: config.author.socialNetwork.facebook
   }],
   icons: [
     { rel: "icon", type: "image/x-icon", url: "/favicon.ico" },
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   ],
   manifest: '/site.webmanifest',
   openGraph: {
-    title: APP_TITLE,
-    description: APP_SLOGAN,
+    title: config.title,
+    description: config.slogan,
   }
 };
 
