@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
+import ProfileCard from "@/components/specific/ProfileCard";
 
 const HomePage = () => {
 	return (
-		<div className="w-screen flex flex-col">
-			<header className="sticky top-0 w-full h-16 bg-gray-100 dark:bg-gray-800 z-50 border-b-[1px] border-gray-300 dark:border-gray-700" />
-		</div>
+		<main className="min-h-screen w-screen max-w-screen-xl mx-auto flex flex-col">
+			<ProfileCard />
+		</main>
 	);
 };
 

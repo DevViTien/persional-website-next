@@ -1,27 +1,22 @@
 import type { Config } from "tailwindcss";
+
 const config: Config = {
 	darkMode: "class",
-	content: [
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-		// "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
-		// "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
-	],
+	content: ["./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
 			colors: {
 				primary: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316",
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+					"50": "#e1f5fe",
+					"100": "#b3e5fc",
+					"200": "#81d4fa",
+					"300": "#4fc3f7",
+					"400": "#29b6f6",
+					"500": "#03a9f4",
+					"600": "#039be5",
+					"700": "#0288d1",
+					"800": "#0277bd",
+					"900": "#01579b",
 				},
 			},
 		},
@@ -63,5 +58,6 @@ const config: Config = {
 		},
 	},
 	plugins: [],
-}
+};
+
 export default config;

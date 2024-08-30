@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import { ThemeProvider } from "@/components/context/ThemeContext";
 import config from "@/config.json";
 import "@/styles/global.scss";
 
@@ -40,11 +41,11 @@ export const metadata: Metadata = {
 
 const RootLayout = async ({ children }: React.PropsWithChildren) => {
 	return (
-		<html lang="en">
-			<body className={inter.className}>
-				<main className="h-screen mx-auto">{children}</main>
-			</body>
-		</html>
+		<ThemeProvider>
+			<html className={inter.className} lang="vi">
+				<body className="bg-gray-0 overflow-x-hidden">{children}</body>
+			</html>
+		</ThemeProvider>
 	);
 };
 
