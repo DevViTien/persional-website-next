@@ -1,7 +1,8 @@
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     TruongNBN website
-    </main>
-  );
-}
+import React from "react";
+import HomePage from "@/components/page/home";
+
+const Page = async () => {
+	return <HomePage />;
+};
+
+export default Page;

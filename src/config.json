@@ -5,9 +5,25 @@
 
   "author": {
     "name": "TruongNBN",
+    "address": "Hanoi, VN",
     "socialNetwork": {
       "facebook": "https://www.facebook.com/nguyenbui.namtruong",
       "github": "https://github.com/DevViTien"
+    }
+  },
+
+  "projects": {
+    "eTask": {
+      "name": "eTask",
+      "description": "Dự án hỗ trợ quản lý công việc trong doanh nghiệp",
+      "owner": "BKAV",
+      "type": "private"
+    },
+    "speech-convert": {
+      "name": "SpeechConvert",
+      "description": "Dự án hỗ trợ chuyển đổi văn bản và âm thanh, bao gồm cả xử lý hội thoại",
+      "owner": "Khách hàng",
+      "type": "public"
     }
   }
 }

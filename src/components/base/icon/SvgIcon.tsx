@@ -1,5 +1,5 @@
 import React from "react";
-import IconsMap, { SvgName, SvgType } from "@/components/icon/svg";
+import IconsMap, { SvgName, SvgType } from "@/components/base/icon/svg";
 import { SvgProps } from "@/types/icon";
 
 type SvgIconProps = {
